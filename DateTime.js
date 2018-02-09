@@ -415,7 +415,7 @@ var Datetime = createClass({
 				onChange: this.onInputChange,
 				onKeyDown: this.onInputKey,
 				value: this.state.inputValue,
-				disable: 'true',
+				disable,
 			}, this.props.inputProps);
 			if ( this.props.renderInput ) {
 				children = [ React.createElement('div', { key: 'i' }, this.props.renderInput( finalInputProps, this.openCalendar, this.closeCalendar )) ];
